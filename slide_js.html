@@ -11,11 +11,27 @@
     locations in the region. There are special rates for short breaks and weekenders." />
     <meta name="author" content="Brendan Ewen" />
     <link rel="stylesheet" href="styles.css" />
+
+    <script>
+        var slideimages = new Array();
+
+        slideimages[0] = new Image();
+
+        slideimages[0].src = "images/slide1.jpg";
+
+        slideimages[1] = new Image();
+
+        slideimages[1].src = "images/slide2.jpg";
+
+        slideimages[2] = new Image();
+
+        slideimages[2].src = "images/slide3.jpg";
+    </script>
   </head>
   <body>
     <!-- An unseen HTML comment -->
     <div class="heading">
-      <h1>Erehwon Guest House</h1>
+      <h1>Erehwon Guest House: Javascript slideshow</h1>
     </div>
 
     <div class="subheading">
@@ -41,6 +57,32 @@
       </p>
       
       </nav>
+
+      <img src="images/slide1.jpg" id="slide" width="435" height="640">
+
+      <script>
+        var step=0;
+
+        function slideshow(){
+
+        document.getElementById('slide').src = slideimages[step].src;
+
+        if (step<2){
+
+            step++;
+
+        } else {
+
+            step=0;
+
+        }
+
+        setTimeout(slideshow,3000);
+
+        }
+
+        slideshow();
+      </script>
 
       <footer class="footer">&copy; 2018 Your Name Here.</footer> 
   </body>
