@@ -143,3 +143,33 @@ body {
     color: #000000;
 
 }
+
+#map {
+
+    position: absolute; left: 20px; 
+    
+}
+
+#address {
+
+    position: absolute; left: 440px; top: 225px;
+
+}
+
+#links {
+
+    width: 350px;
+    position: absolute; left: 225px;
+
+}
+
+#prices{
+
+    width: 350px;
+    position: absolute; left: 225px;
+
+}
+
+.price_header_3{
+    text-decoration: underline;
+}
